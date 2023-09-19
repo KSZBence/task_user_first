@@ -22,6 +22,8 @@ Route::get('/', function () {
 Route::get('api/task', [TaskController::class, "index"]);
 Route::get('api/task/{id}', [TaskController::class, "show"]);
 Route::get('task/list', [TaskController::class, "listview"]);
+Route::get('task/new', [TaskController::class, "newView"]);
+Route::get('task/edit/{id}', [TaskController::class, "editView"]);
 
 
 //require __DIR__ . '/auth.php';
