@@ -33,7 +33,7 @@ class TaskController extends Controller
         $task->end_date = $request->end_date;
         $task->user_id = $request->user_id;
         $task->status = $request->status;
-        $task->save = $request->save;
+        $task->save();
         return redirect("/task/list");
     }
 
